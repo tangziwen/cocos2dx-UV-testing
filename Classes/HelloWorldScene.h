@@ -12,12 +12,12 @@ public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
     
-    void dragonUpdate(float dt);
+    void cylinderUpdate(float dt);
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
 private:
     cocos2d::GLProgramState * state;
-    float dragon_texture_offset;
+    float cylinder_texture_offset;
     float shining_duraion;
 };
 
